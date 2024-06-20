@@ -14,8 +14,8 @@ class DiffieHellmanController extends Controller
 
     public function index()
     {
-        ini_set('memory_limit', '2048M'); // Increase memory limit
-        ini_set('max_execution_time', 1200); // Increase execution time
+        ini_set('memory_limit', '4048M'); // Increase memory limit
+        ini_set('max_execution_time',-1); // Increase execution time
 
         $a = $this->babyStepGiantStep($this->g, $this->p, $this->A);
 

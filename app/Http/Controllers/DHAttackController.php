@@ -13,8 +13,8 @@ class DHAttackController extends Controller
 
     public function bruteForce()
     {
-        ini_set('max_execution_time', 600); // 600 seconds = 10 minutes
-        ini_set('memory_limit', '1024M'); // 1024 MB or 1 GB
+        ini_set('max_execution_time', -1); //
+        ini_set('memory_limit', '4024M'); // 
 
         // Try to find 'a' by brute force
         $a = $this->findExponent($this->A);
